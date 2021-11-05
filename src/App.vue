@@ -1,19 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <page1 />
+    <page2 />
+    <display />
+    <counter />
   </div>
 </template>
 
+
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import page1 from "@/components/page1";
+import page2 from "@/components/page2";
+import display from "@/components/display";
+import counter from "@/components/counter";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    page1,
+    page2,
+    display,
+    counter,
+  },
+};
 </script>
 
 <style>
@@ -22,7 +33,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: blueviolet;
   margin-top: 60px;
 }
 </style>
